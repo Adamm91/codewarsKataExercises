@@ -17,7 +17,7 @@ public class CreatePhoneNumber {
         System.out.println(createPhoneNumber(numbers));
     }
 
-    public static String createPhoneNumber(int[] numbers) {
+    public static String createPhoneNumber2(int[] numbers) {
         StringBuilder sb = new StringBuilder();
         sb.append("(");
         for (int i = 0; i < numbers.length; i++) {
@@ -26,5 +26,13 @@ public class CreatePhoneNumber {
             if (i == 5) sb.append("-");
         }
         return sb.toString();
+    }
+
+    public static String createPhoneNumber(int[] numbers) {
+        String text = "(xxx) xxx-xxxx";
+        for (int number : numbers) {
+            text = text.replaceFirst("x", Integer.toString(number));
+        }
+        return text;
     }
 }
