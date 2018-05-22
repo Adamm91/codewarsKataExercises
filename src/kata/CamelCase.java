@@ -20,8 +20,8 @@ public class CamelCase {
                 split[i]= String.valueOf(array);
             }
         }
-        String camelCase = "";
-        for (String s : split) camelCase += s;
-        return camelCase;
+        StringBuilder camelCase = new StringBuilder();
+        for (String s : split) camelCase.append(s);
+        return camelCase.toString();
     }
 }
