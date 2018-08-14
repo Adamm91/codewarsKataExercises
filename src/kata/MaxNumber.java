@@ -6,7 +6,7 @@ public class MaxNumber {
 
     public static void main(String[] args) {
         System.out.println(maxNumber(213));
-        System.out.println(maxNumber(34621));
+        System.out.println(maxNumber(7398));
         System.out.println(maxNumber(43481));
         System.out.println(maxNumber(913489));
     }
