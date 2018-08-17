@@ -39,8 +39,8 @@ Explanation:
         Arrays.sort(values);
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < values.length - 1; i++)
-            if (values[i] == values[i + 1]) continue;
-            else sb.append(values[i]);
+            if (values[i] != values[i + 1])
+            sb.append(values[i]);
         sb.append(values[values.length - 1]);
         return Integer.parseInt(sb.toString());
     }
