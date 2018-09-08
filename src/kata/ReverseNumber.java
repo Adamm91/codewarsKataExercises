@@ -24,6 +24,6 @@ Examples
 
     public static int reverse(int number) {
         return number < 0 ? Integer.parseInt(new StringBuilder().append(number * -1).append("-").reverse().toString())
-                : Integer.parseInt(new StringBuilder().append(number).reverse().toString());
+                : Integer.parseInt(new StringBuilder("" + number).reverse().toString());
     }
 }
