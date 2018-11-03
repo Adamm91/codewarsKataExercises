@@ -61,15 +61,6 @@ Constraints: 0 ≤ k ≤ 100000.
 [output] an integer
      */
 
-    public static void main(String[] args) {
-        System.out.println(find(new int[]{2, 3, 5, 2}, 3));
-        System.out.println(find(new int[]{1, 3, 3, 1, 1}, 0));
-        System.out.println(find(new int[]{5, 1, 3, 4, 1}, 0));
-        System.out.println(find(new int[]{1, 1, 1, 1}, 1));
-        System.out.println(find(new int[]{1, 1, 1, 1}, 0));
-        System.out.println(find(new int[]{3, 1, 1, 3, 1}, 2));
-
-    }
 
     static int find(final int[] votes, final int k) {
         int count = 0;
